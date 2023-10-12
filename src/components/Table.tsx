@@ -61,8 +61,8 @@ function Table() {
         head2="Your new financial situation"
         data1="$0.00 a month"
         data2="$415.00 a month"
-        color="#a82424"
-        // color="bg-gray-100"
+      //  color="#a82424"
+        color="bg-gray-900"
       />
       <TableCall
         name="Credit Card Debt"
