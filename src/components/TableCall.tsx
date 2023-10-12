@@ -13,10 +13,10 @@ function TableCall({ name, head1, head2, data1, data2, color }: all) {
   return (
     <>
       <div className=" w-full container m-auto h-auto">
-        <div className={`w-full  grid-cols-3 hidden md:grid text-center  bg-[${color}]`}>
+        <div className={`w-full  grid-cols-3 hidden md:grid text-center  ${color}`}>
           <span className="p-8 font-sans font-bold text-xl">{name}</span>
           <span className="p-8 font-sans font-bold text-xl">{data1}</span>
-          <span className="p-8 font-sans font-bold text-xl">{data2}</span>
+          <span className="p-8 font-sans font-bold text-xl ">{data2}</span>
         </div>
         <div className="md:hidden  font-bold my-4 font-sans  text-xl">
           {name}

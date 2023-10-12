@@ -14,7 +14,7 @@ function Footer() {
       <div className="bg-[#FAF8FF] border w-full ">
         {/* footer caontain */}
         <div className=" h-auto container m-auto">
-          <img className="h-32 w-56" src={Logo} alt="error" />
+          <img className="h-32 w-56 px-3" src={Logo} alt="error" />
           <div className="flex flex-col-reverse lg:flex-row w-full   gap-8 p-2">
             {/* footer left div */}
             <div className="flex flex-col w-full  space-y-10">
