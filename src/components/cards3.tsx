@@ -17,7 +17,7 @@ function cards3({setvalue, value}:all) {
         setvalue(value-1)
     }
   return (
-    <><div className=" border-neutral-200 bg-white border-[4px] md:border-[8px] w-full h-auto  rounded-3xl ">
+    <><div className=" border-neutral-200 bg-white my-16 xl:my-0 pb-10  xl:border-[8px] w-full h-auto  rounded-3xl ">
     <img className="w-10 h-10 mt-4 ml-4" src={Back} alt="back error" onClick={Goback} />
     <p className=" text-4xl font-bold text-center mt-16 px-12">
     How much money do you need?

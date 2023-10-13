@@ -21,7 +21,7 @@ function Cards({value,setvalue}:all) {
     <>
 
        {/* left div */}
-       <div className=" border-neutral-200 bg-white border-[4px] md:border-[8px] w-full h-auto  rounded-3xl ">
+       <div className=" border-neutral-200 bg-white my-16 xl:my-0 pb-10  xl:border-[8px] w-full h-auto  rounded-3xl ">
             <p className="p-7 text-3xl font-bold">What can we help you with?</p>
             <div className="w-11/12 m-7   h-3">Question 1 of 5</div>
             {/* progress Bar */}

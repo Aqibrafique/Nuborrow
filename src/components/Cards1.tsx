@@ -26,7 +26,7 @@ const Goback = () =>{
     return (
       <>
         {/* left div */}
-        <div className=" border-neutral-200 bg-white border-[4px] md:border-[8px] w-full h-auto  rounded-3xl ">
+        <div className=" border-neutral-200 bg-white my-16 xl:my-0 pb-10  xl:border-[8px] w-full h-auto  rounded-3xl ">
           <img
             className="w-10 h-10 mt-4 ml-4"
             src={Back}
