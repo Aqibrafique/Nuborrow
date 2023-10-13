@@ -28,15 +28,15 @@ const Goback = () =>{
         {/* left div */}
         <div className=" border-neutral-200 bg-white my-16 xl:my-0 pb-10  xl:border-[8px] w-full h-auto  rounded-3xl ">
           <img
-            className="w-10 h-10 mt-4 ml-4"
+            className="w-16 h-16 xl:mt-4 xl:ml-4  ml-5 pt-5 xl:pt-0"
             src={Back}
             alt="back error"
             onClick={Goback}
           />
-          <p className="p-7 text-3xl font-bold">What can we help you with?</p>
-          <div className="w-11/12 m-7   h-3">Question 2 of 5</div>
+          <p className="p-7 text-3xl font-Raleway font-bold">What can we help you with?</p>
+          <div className="w-11/12 m-3 md:m-7 font-Open_Sans font-normal text-sm  h-0">Question 2 of 5</div>
           {/* progress Bar */}
-          <div className="w-11/12 m-7   h-3 dark:bg-neutral-200">
+          <div className="w-11/12 m-3 md:m-7   h-3 dark:bg-neutral-200">
             <div className="bg-[#715BA8] h-3  w-2/5"></div>
           </div>
           {/* cards */}

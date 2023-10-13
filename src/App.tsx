@@ -10,10 +10,12 @@ function App() {
 
   return (
     <>
+    <div>
        <Header/>
       <HelpSection/>
       <Table/>
       <Footer/>
+      </div>
     </>
   )
 }

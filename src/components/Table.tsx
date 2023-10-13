@@ -6,15 +6,17 @@ function Table() {
   return (
     <>
       {/* section 1 */}
-      <div className="p-4">
-        <div className=" w-full container m-auto h-auto flex flex-col md:flex-row items-center md:items-end justify-between xl:gap-40 -mb-4">
+      <div className="p-4 lg:px-16">
+        <div className=" w-full container m-auto h-auto flex flex-col md:flex-row items-center md:items-end justify-between xl:gap-40 -mb-5">
+        <div className="w-1/2">
           <p className="text-2xl lg:text-5xl font-bold py-8 md:py-16 text-center md:text-left">
             Clients <span className="text-[#715BA8] font-black"> SAVE</span>{" "}
             over <span className="text-[#715BA8] font-black"> $15,000 </span> a
             year with our proven strategies.
           </p>
+          </div>
           <img
-            className="w-96 h-60 hidden md:block px-0"
+            className="w-auto h-80 hidden md:block  "
             src={Girl}
             alt="error"
           />
