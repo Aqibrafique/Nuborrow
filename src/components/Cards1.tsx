@@ -7,20 +7,74 @@ import Back from "../assets/back.svg";
 
 
 interface all {
-     setvalue:React.Dispatch<React.SetStateAction<number>>
-     value:number
+  setvalue: React.Dispatch<React.SetStateAction<number>>;
+  value: number;
+  data: object;
+  setData: React.Dispatch<React.SetStateAction<object>>;
 }
 
-function Cards1({setvalue, value}:all) {
+function Cards1({value, setvalue, data, setData }:all) {
+  const handleclick = () => {
+    const element = document.getElementById("Detached_House");
+  
+    if (element) {
+      const text = element.textContent;
+      setData({ ...data, cards1: text });
+      const a = { ...data, cards1: text }
+      localStorage.setItem("Users", JSON.stringify(a));
+      console.log(a);
+    } 
+   else {
+      console.log("Element not found");
+    }
+    setvalue(value + 1);
+  };
+  const handleclick1 = () => {
+    const element = document.getElementById("Semi_Detached_House");
+    if (element) {
+      const text = element.textContent;
+      setData({ ...data, cards1: text });
+      const a = { ...data, cards1: text }
+      localStorage.setItem("Users", JSON.stringify(a));
+      console.log(a);
+    } 
+    else {
+      console.log("Element not found");
+    }
+    setvalue(value + 1);
+  };
+  const handleclick2 = () => {
+    const element = document.getElementById("Townhouse");
+    if (element) {
+      const text = element.textContent;
+      setData({ ...data, cards1: text });
+      const a = { ...data, cards1: text }
+      localStorage.setItem("Users", JSON.stringify(a));
+      
+    } 
+    else {
+      console.log("Element not found");
+    }
+    setvalue(value + 1);
+  };
+  const handleclick3 = () => {
+    const element = document.getElementById("Condo");
+    if (element) {
+      const text = element.textContent;
+      setData({ ...data, cards1: text });
+      const a = { ...data, cards1: text }
+      localStorage.setItem("Users", JSON.stringify(a));
+    } 
+    else {
+      console.log("Element not found");
+    }
+    setvalue(value + 1);
+  };
 
 const Goback = () =>{
     setvalue(value-1)
 }
   
-
-  const handleclick = () =>{
-    setvalue(value+1)
-  }
 
   
     return (
@@ -47,39 +101,39 @@ const Goback = () =>{
                 src={helpsection21}
                 alt="error"
               />
-              <p className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
+              <p id="Detached_House" className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
               Detached House
               </p>
             </div>
-            <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick}>
+            <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick1}>
               <img
                 className="w-60 h-36 p-4 m-3"
                 src={helpsection22}
                 alt="error"
               />
-              <p className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
+              <p id="Semi_Detached_House" className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
               Semi-Detached House
               </p>
             </div>
           </div>
           <div className="flex justify-around flex-wrap py-7 space-y-4 md:space-y-0">
-            <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick}>
+            <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick2}>
               <img
                 className="w-60 h-36 p-4 m-3"
                 src={helpsection23}
                 alt="error"
               />
-              <p className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
+              <p id="Townhouse" className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
               Townhouse
               </p>
             </div>
-            <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick}>
+            <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick3}>
               <img
                 className="w-60 h-36 p-4 m-3"
                 src={helpsection24}
                 alt="error"
               />
-              <p className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
+              <p id="Condo" className="pt-2 m-auto w-52 h-20   text-lg font-sans font-normal">
               Condo
               </p>
             </div>

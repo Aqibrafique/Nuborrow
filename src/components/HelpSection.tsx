@@ -11,10 +11,15 @@ import Cards4 from "./Cards4";
 function HelpSection() {
   const [page, setPage] = useState<number>(1);
   const [data, setData] = useState<object>({
-cards:"",
-cards1:""
+    cards: "",
+    cards1: "",
+    cards2: "",
+    cards3: "",
+    Name: "",
+    Phone: "",
+    Email: "",
+    Address: "",
   });
-
 
   return (
     <>
@@ -24,17 +29,47 @@ cards1:""
           {/* left div */}
           <div className="xl:w-1/2">
             {page === 1 ? (
-              <Cards value={page} setvalue={setPage} data={data} setData={setData}/>
+              <Cards
+                value={page}
+                setvalue={setPage}
+                data={data}
+                setData={setData}
+              />
             ) : page === 2 ? (
-              <Cards1 value={page} setvalue={setPage} />
+              <Cards1
+                value={page}
+                setvalue={setPage}
+                data={data}
+                setData={setData}
+              />
             ) : page === 3 ? (
-              <Cards2 value={page} setvalue={setPage} />
+              <Cards2
+                value={page}
+                setvalue={setPage}
+                data={data}
+                setData={setData}
+              />
             ) : page === 4 ? (
-              <Cards3 value={page} setvalue={setPage} />
+              <Cards3
+                value={page}
+                setvalue={setPage}
+                data={data}
+                setData={setData}
+              />
             ) : page === 5 ? (
-              <Cards4 value={page} setvalue={setPage} />
+              <Cards4
+                value={page}
+                setvalue={setPage}
+                data={data}
+                setData={setData}
+              />
             ) : (
-              <Cards value={page} setvalue={setPage} data={data} setData={setData}/>
+              <Cards4
+                value={page}
+                setvalue={setPage}
+                data={data}
+                setData={setData}
+              />
             )}
           </div>
           {/* right div */}
@@ -42,8 +77,10 @@ cards1:""
             {/* flex col 1 */}
             <div className="text-3xl font-bold ">
               <p className="text-5xl font-Raleway">
-                We've <span className="text-[#715BA8] font-black"> SAVED</span> Canadians over 8.5 <span className="text-[#715BA8] font-black"> MILLION </span> in debt over the last 10
-                years.
+                We've <span className="text-[#715BA8] font-black"> SAVED</span>{" "}
+                Canadians over 8.5{" "}
+                <span className="text-[#715BA8] font-black"> MILLION </span> in
+                debt over the last 10 years.
               </p>
             </div>
             {/* flex col 2 */}

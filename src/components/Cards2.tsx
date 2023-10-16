@@ -4,12 +4,18 @@ import Back from "../assets/back.svg";
 interface all {
   setvalue: React.Dispatch<React.SetStateAction<number>>;
   value: number;
+  data: object;
+  setData: React.Dispatch<React.SetStateAction<object>>;
 }
 
-function Cards2({ setvalue, value }: all) {
-  const [data, setData] = useState<number>(200000.00);
+function Cards2({ value, setvalue, data, setData }: all) {
+  const [slider, setSlider] = useState<string>("200000.00");
+  const conv = Number(slider);
 
   const handleclick = () => {
+    setData({ ...data, cards2: slider });
+      const a = { ...data, cards2: slider }
+      localStorage.setItem("Users", JSON.stringify(a));
     setvalue(value + 1);
   };
   const Goback = () => {
@@ -44,7 +50,7 @@ function Cards2({ setvalue, value }: all) {
         </div>
         {/* value */}
         <div className="text-center text-3xl font-bold m-32">
-          {formatter.format(data)}
+          {formatter.format(conv)}
         </div>
         {/* slider */}
         
@@ -55,8 +61,8 @@ function Cards2({ setvalue, value }: all) {
             min="200000.00"
             max="1500000.00"
             step="10"
-            value={data}
-            onChange={(e) => setData(e.target.value)}
+            value={slider}
+            onChange={(e) => setSlider(e.target.value)}
           />
         </div>
         <div className="w-11/12  flex items-center justify-center my-9">

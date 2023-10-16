@@ -5,11 +5,17 @@ import Back from "../assets/back.svg";
 interface all {
   setvalue: React.Dispatch<React.SetStateAction<number>>;
   value: number;
+  data: object;
+  setData: React.Dispatch<React.SetStateAction<object>>;
 }
 
-function cards3({ setvalue, value }: all) {
-  const [data, setData] = useState<string>("200000.0");
+function cards3({ setvalue, value, data, setData }: all) {
+  const [slider, setSlider] = useState<string>("200000.0");
+  const a = Number(slider);
   const handleclick = () => {
+    setData({ ...data, cards3: slider });
+    const a = { ...data, cards3: slider };
+    localStorage.setItem("Users", JSON.stringify(a));
     setvalue(value + 1);
   };
   const Goback = () => {
@@ -38,17 +44,16 @@ function cards3({ setvalue, value }: all) {
         </div>
         {/* value */}
         <div className="text-center text-3xl font-bold my-32">
-
-          {formatter.format(data)}
+          {formatter.format(a)}
         </div>
         {/* slider */}
         <input
           type="range"
           min="25000.00"
           max="1000000"
-          value={data}
+          value={slider}
           step="10"
-          onChange={(e) => setData(e.target.value)}
+          onChange={(e) => setSlider(e.target.value)}
           className="w-11/12 m-3 md:m-7 appearance-none flex items-center cursor-pointer bg-transparent z-30
         [&::-webkit-slider-thumb]:bg-[#715BA8] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-black [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:appearance-none
         [&::-moz-range-thumb]:bg-[#715BA8] [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:w-2.5 [&::-moz-range-thumb]:h-2.5 [&::-moz-range-thumb]:appearance-none
