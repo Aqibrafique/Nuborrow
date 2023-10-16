@@ -8,14 +8,17 @@ import Cards1 from './Cards1';
 interface all {
     setvalue:React.Dispatch<React.SetStateAction<number>>
     value:number
+    data:object
+    setData: React.Dispatch<React.SetStateAction<object>>
 }
 
-function Cards({value,setvalue}:all) {
+function Cards({value,setvalue,data,setData}:all) {
     // const [data, Setdata] = useState("");
     const handleclick = () =>{
+      setData({...data, cards : "first card" });
+        localStorage.setItem("Users", JSON.stringify(data))
         setvalue(value+1)
-
-
+        
     }
    
   return (

@@ -10,6 +10,11 @@ import Cards4 from "./Cards4";
 
 function HelpSection() {
   const [page, setPage] = useState<number>(1);
+  const [data, setData] = useState<object>({
+cards:"",
+cards1:""
+  });
+
 
   return (
     <>
@@ -19,7 +24,7 @@ function HelpSection() {
           {/* left div */}
           <div className="xl:w-1/2">
             {page === 1 ? (
-              <Cards value={page} setvalue={setPage} />
+              <Cards value={page} setvalue={setPage} data={data} setData={setData}/>
             ) : page === 2 ? (
               <Cards1 value={page} setvalue={setPage} />
             ) : page === 3 ? (
@@ -29,7 +34,7 @@ function HelpSection() {
             ) : page === 5 ? (
               <Cards4 value={page} setvalue={setPage} />
             ) : (
-              <Cards value={page} setvalue={setPage} />
+              <Cards value={page} setvalue={setPage} data={data} setData={setData}/>
             )}
           </div>
           {/* right div */}
