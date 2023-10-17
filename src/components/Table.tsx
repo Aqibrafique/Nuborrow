@@ -7,7 +7,7 @@ function Table() {
     <>
       {/* section 1 */}
       <div className="p-4 lg:px-16">
-        <div className=" w-full container m-auto h-auto flex flex-col md:flex-row items-center md:items-end justify-between xl:gap-40 -mb-4">
+        <div className=" w-full container m-auto h-auto flex flex-col md:flex-row items-center md:items-end justify-between xl:gap-40 md:-mb-4 lg:-mb-5">
         <div className="w-1/2">
           <p className="text-2xl lg:text-5xl font-bold py-8 md:py-16 text-center md:text-left">
             Clients <span className="text-[#715BA8] font-black"> SAVE</span>{" "}
@@ -15,11 +15,13 @@ function Table() {
             year with our proven strategies.
           </p>
           </div>
+          <div className="w-1/2 px-4">
           <img
-            className="w-50 h-60  hidden md:block  "
+            className="w-auto lg:h-80 md:h-60  hidden md:block  "
             src={Girl}
             alt="error"
           />
+          </div>
         </div>
         <div className="w-full container m-auto">
           <div className="bg-[#715BA8] w-full hidden grid-cols-3 text-white font-bold text-2xl  rounded-t-lg md:rounded-t-3xl md:grid">

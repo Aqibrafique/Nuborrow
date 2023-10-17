@@ -47,7 +47,7 @@ function cards3({ setvalue, value, data, setData }: all) {
           {formatter.format(a)}
         </div>
         {/* slider */}
-        <input
+        {/* <input
           type="range"
           min="25000.00"
           max="1000000"
@@ -61,7 +61,16 @@ function cards3({ setvalue, value, data, setData }: all) {
         [&::-webkit-slider-runnable-track]:bg-neutral-200 [&::-webkit-slider-runnable-track]:rounded-none [&::-webkit-slider-runnable-track]:overflow-hidden [&::-moz-range-track]:bg-[#715BA8] [&::-moz-range-track]:rounded-full [&::-ms-track]:bg-[#715BA8] [&::-ms-track]:rounded-full
         [&::-moz-range-progress]:bg-[#715BA8] [&::-moz-range-progress]:rounded-full [&::-ms-fill-lower]:bg-blue-400 [&::-ms-fill-lower]:rounded-full [&::-webkit-slider-thumb]:shadow-[-999px_0px_0px_990px_#715BA8]
     "
-        ></input>
+        ></input> */}
+        <input
+            className="w-11/12 m-3 md:m-7 cursor-pointer rounded-none bg-neutral-100 accent-[#715BA8]"
+            type="range"
+            min="25000.00"
+            max="1000000"
+            step="10"
+            value={slider}
+            onChange={(e) => setSlider(e.target.value)}
+          />
         <div className="w-11/12  flex items-center justify-center my-9">
           <button
             className="w-4/12 h-12 rounded-full text-center font-bold text-xl bg-[#715BA8] text-white"

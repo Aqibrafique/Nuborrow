@@ -9,10 +9,10 @@ function validate(values: {Name: string;Phone?: string;Email?: string;Address?: 
         };
         const name_validation = new RegExp(/^[a-zA-Z\s._-]{3,30}$/);
         const phone_validation = new RegExp(
-          /((\+*)((0[ -]*)*|((91 )*))((\d{12})+|(\d{10})+))|\d{5}([- ]*)\d{6}/
+          /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
         );
         const email_validation = new RegExp(
-          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+          /[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/
         );
         if (!values.Name) {
           errors.Name = "Name is Required!";
