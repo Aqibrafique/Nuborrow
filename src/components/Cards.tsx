@@ -85,7 +85,7 @@ function Cards({ value, setvalue, data, setData }: all) {
           <div className="bg-[#715BA8] h-3  w-1/5"></div>
         </div>
         {/* cards */}
-        <div className="flex justify-around flex-wrap py-7  gap-14 md:gap-0">
+        <div className="flex justify-around flex-wrap py-7  gap-12 md:gap-0">
           <div
             className="border-neutral-200 border-[4px] cursor-pointer text-center hover:shadow-md  md:border-[8px] flex rounded-3xl justify-center items-center flex-col"
             onClick={handleclick}

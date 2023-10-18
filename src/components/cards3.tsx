@@ -29,7 +29,7 @@ function Cards3({ setvalue, value, data, setData }: all) {
     <>
       <div className=" border-neutral-200 bg-white my-16 xl:my-0 pb-10  xl:border-[8px] w-full h-auto  rounded-3xl ">
         <img
-          className="w-16 h-16 xl:mt-4 xl:ml-4  ml-5 pt-5 xl:pt-0"
+          className="w-14 h-14 xl:mt-4 xl:ml-4 pt-5 xl:pt-0"
           src={Back}
           alt="back error"
           onClick={Goback}

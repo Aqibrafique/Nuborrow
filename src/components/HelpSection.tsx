@@ -23,9 +23,10 @@ function HelpSection() {
 
   return (
     <>
+    {/* px-4 lg:px-16 */}
       {/* main div */}
       <div className="w-full h-auto bg-[#FAF8FF] ">
-        <div className="w-full container m-auto  flex flex-col-reverse xl:flex-row    px-4 lg:px-16 space-y-8 md:space-y-0 py-14">
+        <div className="w-full container m-auto  flex flex-col-reverse xl:flex-row  px-4 lg:px-16   space-y-8 md:space-y-0 py-14">
           {/* left div */}
           <div className="xl:w-1/2">
             {page === 1 ? (

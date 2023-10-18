@@ -82,7 +82,7 @@ const Goback = () =>{
         {/* left div */}
         <div className=" border-neutral-200 bg-white my-16 xl:my-0 pb-10  xl:border-[8px] w-full h-auto  rounded-3xl ">
           <img
-            className="w-16 h-16 xl:mt-4 xl:ml-4  ml-5 pt-5 xl:pt-0"
+            className="w-14 h-14 xl:mt-4 xl:ml-4 pt-5 xl:pt-0"
             src={Back}
             alt="back error"
             onClick={Goback}
@@ -94,7 +94,7 @@ const Goback = () =>{
             <div className="bg-[#715BA8] h-3  w-2/5"></div>
           </div>
           {/* cards */}
-          <div className="flex justify-around flex-wrap py-7 space-y-4 md:space-y-0">
+          <div className="flex justify-around flex-wrap py-7 gap-12  md:gap-0">
             <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col " onClick={handleclick}>
               <img
                 className="w-60 h-36 p-4 m-3"
@@ -116,7 +116,7 @@ const Goback = () =>{
               </p>
             </div>
           </div>
-          <div className="flex justify-around flex-wrap py-7 space-y-4 md:space-y-0">
+          <div className="flex justify-around flex-wrap py-7 gap-12 md:gap-0">
             <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick2}>
               <img
                 className="w-60 h-36 p-4 m-3"
