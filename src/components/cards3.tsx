@@ -10,7 +10,7 @@ interface all {
 }
 
 function Cards3({ setvalue, value, data, setData }: all) {
-  const [slider, setSlider] = useState<string>("200000.0");
+  const [slider, setSlider] = useState<string>("25000.0");
   const a = Number(slider);
   const handleclick = () => {
     setData({ ...data, cards3: slider });

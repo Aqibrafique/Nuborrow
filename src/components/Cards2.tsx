@@ -49,14 +49,14 @@ function Cards2({ value, setvalue, data, setData }: all) {
           <div className="bg-[#715BA8] h-3  w-3/5 "></div>
         </div>
         {/* value */}
-        <div className="text-center text-3xl font-bold m-32">
+        <div className="text-center text-3xl font-bold my-32">
           {formatter.format(conv)}
         </div>
         {/* slider */}
         
         <div>
           <input
-            className="w-11/12 m-3 md:m-7 cursor-pointer rounded-none bg-neutral-100 accent-[#715BA8]"
+            className="w-11/12 m-3 md:m-7 border cursor-pointer rounded-none bg-neutral-100 accent-[#715BA8]"
             type="range"
             min="200000.00"
             max="1500000.00"
