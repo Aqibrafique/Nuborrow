@@ -25,7 +25,7 @@ function Table() {
           </div>
         </div>
         <div className="w-full container m-auto">
-          <div className="bg-[#715BA8] w-full hidden grid-cols-3 text-white font-bold text-2xl  rounded-t-lg md:rounded-t-3xl md:grid">
+          <div className="bg-[#715BA8] w-full text-center hidden grid-cols-3 text-white font-bold text-2xl  rounded-t-lg md:rounded-t-3xl md:grid">
             <span></span>
             <span className="p-6">Current Financial Situation</span>
             <span className="p-6">Your new financial situation</span>

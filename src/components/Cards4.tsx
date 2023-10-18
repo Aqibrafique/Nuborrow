@@ -33,6 +33,11 @@ function Cards4({ setvalue, value, data, setData }: all) {
   const handleSelect = async (value: string) => {
     const results = await geocodeByAddress(value);
     // const ll = await getLatLng(results[0]);
+    if (!value) {
+      setForm_errors({ ...form_errors, Address: "Address is Required!" });
+    } else {
+      setForm_errors({ ...form_errors, Address: "" });
+    }
     console.log(results);
     setAddress(value);
   };
@@ -178,17 +183,19 @@ function Cards4({ setvalue, value, data, setData }: all) {
           alt="back error"
           onClick={Goback}
         />
-        <p className=" text-4xl font-bold text-center mt-16 px-12">
+        <p className=" text-2xl md:text-4xl font-bold text-center mt-16 px-12">
           Amazing! You're no-cost reports are waiting for you.
         </p>
-        <div className="w-11/12 mx-3 mt-4 md:mx-7 font-Open_Sans font-normal text-sm">Question 5 of 5</div>
+        <div className="w-11/12 mx-3 mt-4 md:mx-7 font-Open_Sans font-normal text-sm">
+          Question 5 of 5
+        </div>
         {/* progress Bar */}
         <div className="w-11/12 mx-3 mt-2 md:mx-7 content-center    dark:bg-neutral-200">
           <div className="bg-[#715BA8] h-3  w-5/5"></div>
         </div>
         {/* form */}
         <div>
-          <form className="flex flex-col w-12/12 gap-4 mt-4 justify-center items-center">
+          <form className="flex flex-col w-12/12 gap-4 mt-4  justify-center items-center">
             <input
               value={name}
               name="name"
@@ -197,10 +204,11 @@ function Cards4({ setvalue, value, data, setData }: all) {
               type="text"
               placeholder="Your name"
             />
-            {form_errors.Name && (
-              <p className="text-red-500">{form_errors.Name}</p>
-            )}
-
+            <div className="text-left w-10/12 ml-10">
+              {form_errors.Name && (
+                <p className="text-red-500 ">{form_errors.Name}</p>
+              )}
+            </div>
             <input
               value={phone}
               name="phone"
@@ -210,9 +218,11 @@ function Cards4({ setvalue, value, data, setData }: all) {
               type="tel"
               placeholder="Your phone (123) 577 23467"
             />
-            {form_errors.Phone && (
-              <p className="text-red-500">{form_errors.Phone}</p>
-            )}
+            <div className="text-left w-10/12 ml-10">
+              {form_errors.Phone && (
+                <p className="text-red-500">{form_errors.Phone}</p>
+              )}
+            </div>
             <input
               value={email}
               name="email"
@@ -221,9 +231,11 @@ function Cards4({ setvalue, value, data, setData }: all) {
               type="text"
               placeholder="Your email"
             />
-            {form_errors.Email && (
-              <p className="text-red-500">{form_errors.Email}</p>
-            )}
+            <div className="text-left w-10/12 ml-10">
+              {form_errors.Email && (
+                <p className="text-red-500">{form_errors.Email}</p>
+              )}
+            </div>
             {/* address autocomplete */}
             <PlacesAutocomplete
               value={address}
@@ -252,29 +264,28 @@ function Cards4({ setvalue, value, data, setData }: all) {
                     />
                   </div>
 
-                    <div className="w-10/12">
-                      {loading && <div>Loading...</div>}
-                      {suggestions.map((suggestion) => {
-                        const className = suggestion.active
-                          ? "suggestion-item--active"
-                          : "suggestion-item";
-                        // inline style for demonstration purpose
-                        const style = suggestion.active
-                          ? { backgroundColor: "#fafafa", cursor: "pointer" }
-                          : { backgroundColor: "#ffffff", cursor: "pointer" };
-                        return (
-                          <div 
-                            {...getSuggestionItemProps(suggestion, {
-                              className,
-                              style,
-                            })}
-                            
-                          >
-                            <span>{suggestion.description}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
+                  <div className="w-10/12">
+                    {loading && <div>Loading...</div>}
+                    {suggestions.map((suggestion) => {
+                      const className = suggestion.active
+                        ? "suggestion-item--active"
+                        : "suggestion-item";
+                      // inline style for demonstration purpose
+                      const style = suggestion.active
+                        ? { backgroundColor: "#fafafa", cursor: "pointer" }
+                        : { backgroundColor: "#ffffff", cursor: "pointer" };
+                      return (
+                        <div
+                          {...getSuggestionItemProps(suggestion, {
+                            className,
+                            style,
+                          })}
+                        >
+                          <span>{suggestion.description}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </>
               )}
             </PlacesAutocomplete>
@@ -286,9 +297,11 @@ function Cards4({ setvalue, value, data, setData }: all) {
               type="text"
               placeholder="your address"
             /> */}
+            <div className="text-left w-10/12 ml-10 -mt-4 p-0 m-0">
             {form_errors.Address && (
               <p className="text-red-500">{form_errors.Address}</p>
             )}
+            </div>
           </form>
         </div>
 
