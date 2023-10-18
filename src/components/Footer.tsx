@@ -1,4 +1,4 @@
-import React from "react";
+
 import Logo from "../assets/Logo.svg";
 import GooglePlay from "../assets/googleplay.svg";
 import AppStore from "../assets/Appstore.svg";

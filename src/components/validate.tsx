@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function validate(values: {Name: string;Phone?: string;Email?: string;Address?: string;}) {
         const errors = {

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Logo from '../assets/Logo.png'
 import Google from '../assets/google.png'
 

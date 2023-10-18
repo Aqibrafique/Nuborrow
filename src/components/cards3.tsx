@@ -37,9 +37,9 @@ function cards3({ setvalue, value, data, setData }: all) {
         <p className=" text-4xl font-bold text-center mt-16 px-12">
           How much money do you need?
         </p>
-        <div className="w-11/12 m-3 md:m-7   h-3">Question 4 of 5</div>
+        <div className="w-11/12 mx-3 mt-4 md:mx-7 font-Open_Sans font-normal text-sm">Question 4 of 5</div>
         {/* progress Bar */}
-        <div className="w-11/12 m-3 md:m-7   h-3 dark:bg-neutral-200">
+        <div className="w-11/12 mx-3 mt-2 md:mx-7 content-center    dark:bg-neutral-200">
           <div className="bg-[#715BA8] h-3  w-4/5"></div>
         </div>
         {/* value */}

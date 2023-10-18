@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Logo from '../assets/Logo.svg'
 import Google from '../assets/google.svg'
 function Header() {

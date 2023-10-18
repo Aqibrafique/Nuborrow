@@ -1,8 +1,7 @@
 import React from "react";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Back from "../assets/back.svg";
 import validate from "./validate";
-import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
@@ -27,13 +26,13 @@ function Cards4({ setvalue, value, data, setData }: all) {
   const [email, setEmail] = useState<string>("");
   const [address, setAddress] = useState<string>("");
   const [form_errors, setForm_errors] = useState<FormErrors>({});
-  const [coordinates, setCoordinates] = useState({
-    lat: null,
-    lng: null,
-  });
+  // const [coordinates, setCoordinates] = useState({
+  //   lat: null,
+  //   lng: null,
+  // });
   const handleSelect = async (value: string) => {
     const results = await geocodeByAddress(value);
-    const ll = await getLatLng(results[0]);
+    // const ll = await getLatLng(results[0]);
     console.log(results);
     setAddress(value);
   };
@@ -115,15 +114,15 @@ function Cards4({ setvalue, value, data, setData }: all) {
     setEmail(value);
   };
   // address change
-  const addressChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    if (!value) {
-      setForm_errors({ ...form_errors, Address: "Address is Required!" });
-    } else {
-      setForm_errors({ ...form_errors, Address: "" });
-    }
-    setAddress(value);
-  };
+  // const addressChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const value = event.target.value;
+  //   if (!value) {
+  //     setForm_errors({ ...form_errors, Address: "Address is Required!" });
+  //   } else {
+  //     setForm_errors({ ...form_errors, Address: "" });
+  //   }
+  //   setAddress(value);
+  // };
   //  On click function
 
   const handleclick = () => {
@@ -181,14 +180,14 @@ function Cards4({ setvalue, value, data, setData }: all) {
         <p className=" text-4xl font-bold text-center mt-16 px-12">
           Amazing! You're no-cost reports are waiting for you.
         </p>
-        <div className="w-11/12 m-3 md:m-7   h-3">Question 5 of 5</div>
+        <div className="w-11/12 mx-3 mt-4 md:mx-7 font-Open_Sans font-normal text-sm">Question 5 of 5</div>
         {/* progress Bar */}
-        <div className="w-11/12 m-3 md:m-7   h-3 dark:bg-neutral-200">
+        <div className="w-11/12 mx-3 mt-2 md:mx-7 content-center    dark:bg-neutral-200">
           <div className="bg-[#715BA8] h-3  w-5/5"></div>
         </div>
         {/* form */}
         <div>
-          <form className="flex flex-col w-12/12 gap-4 justify-center items-center">
+          <form className="flex flex-col w-12/12 gap-4 mt-4 justify-center items-center">
             <input
               value={name}
               name="name"
@@ -252,7 +251,7 @@ function Cards4({ setvalue, value, data, setData }: all) {
                     />
                   </div>
 
-                    <div className="border-black border  w-10/12">
+                    <div className="w-10/12">
                       {loading && <div>Loading...</div>}
                       {suggestions.map((suggestion) => {
                         const className = suggestion.active
