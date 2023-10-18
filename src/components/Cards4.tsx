@@ -55,8 +55,9 @@ function Cards4({ setvalue, value, data, setData }: all) {
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     // this is where we'll call our future formatPhoneNumber function that we haven't written yet.
     const formattedPhoneNumber = formatPhoneNumber(e.target.value);
+    const num = String(formattedPhoneNumber);
     // we'll set the input value using our setInputValue
-    setPhone(formattedPhoneNumber);
+    setPhone(num);
   };
   function formatPhoneNumber(value: string) {
     if (!value) {

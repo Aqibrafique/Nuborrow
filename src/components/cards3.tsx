@@ -9,7 +9,7 @@ interface all {
   setData: React.Dispatch<React.SetStateAction<object>>;
 }
 
-function cards3({ setvalue, value, data, setData }: all) {
+function Cards3({ setvalue, value, data, setData }: all) {
   const [slider, setSlider] = useState<string>("200000.0");
   const a = Number(slider);
   const handleclick = () => {
@@ -84,4 +84,4 @@ function cards3({ setvalue, value, data, setData }: all) {
   );
 }
 
-export default cards3;
+export default Cards3;
