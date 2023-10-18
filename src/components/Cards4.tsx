@@ -4,7 +4,7 @@ import Back from "../assets/back.svg";
 import validate from "./validate";
 import PlacesAutocomplete, {
   geocodeByAddress,
-  getLatLng,
+  // getLatLng,
 } from "react-places-autocomplete";
 
 interface all {
@@ -58,7 +58,7 @@ function Cards4({ setvalue, value, data, setData }: all) {
     // we'll set the input value using our setInputValue
     setPhone(formattedPhoneNumber);
   };
-  function formatPhoneNumber(value: any) {
+  function formatPhoneNumber(value: string) {
     if (!value) {
       setForm_errors({ ...form_errors, Phone: "Phone No is Required!" });
       return value;
@@ -102,7 +102,7 @@ function Cards4({ setvalue, value, data, setData }: all) {
   const emailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     const Email_validation = new RegExp(
-      /[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/
+      /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/
     );
     if (!value) {
       setForm_errors({ ...form_errors, Email: "Email is Required!" });

@@ -12,7 +12,7 @@ function validate(values: {Name: string;Phone?: string;Email?: string;Address?: 
           /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
         );
         const email_validation = new RegExp(
-          /[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/
+          /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/
         );
         if (!values.Name) {
           errors.Name = "Name is Required!";
