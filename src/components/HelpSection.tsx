@@ -26,7 +26,7 @@ function HelpSection() {
     {/* px-4 lg:px-16 */}
       {/* main div */}
       <div className="w-full h-auto bg-[#FAF8FF] ">
-        <div className="w-full container m-auto  flex flex-col-reverse xl:flex-row  px-4 lg:px-16   space-y-8 md:space-y-0 py-14">
+        <div className="w-full container m-auto  flex flex-col-reverse xl:flex-row  px-4    space-y-8 md:space-y-0 py-14">
           {/* left div */}
           <div className="xl:w-1/2">
             {page === 1 ? (
@@ -100,7 +100,7 @@ function HelpSection() {
                   src={Help1}
                   alt="error"
                 />
-                <div className="font-semibold font-Raleway text-2xl">
+                <div className="font-semibold font-Raleway text-base  lg:text-xl">
                   Easily access your free credit score, home equity report, and
                   pre-approved options on our mobile app
                 </div>
@@ -111,7 +111,7 @@ function HelpSection() {
                   src={Help2}
                   alt="error"
                 />
-                <div className="font-semibold font-Raleway text-2xl">
+                <div className="font-semibold font-Raleway text-base  lg:text-xl">
                   No credit or income requirements needed to be approved
                 </div>
               </div>
@@ -121,7 +121,7 @@ function HelpSection() {
                   src={Help3}
                   alt="error"
                 />
-                <div className="font-semibold font-Raleway text-2xl">
+                <div className="font-semibold font-Raleway text-base  lg:text-xl">
                   Safe and secure process. Nuborrow is an A+ Better Business
                   ranked company with 1,000's of Google reviews.
                 </div>

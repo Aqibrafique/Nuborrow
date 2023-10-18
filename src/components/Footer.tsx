@@ -13,7 +13,7 @@ function Footer() {
       {/* footer main bg color with full width */}
       <div className="bg-[#FAF8FF] border w-full ">
         {/* footer caontain */}
-        <div className=" h-auto container m-auto py-8 lg:px-16">
+        <div className=" h-auto container m-auto py-8 px-4">
           <img className="h-34 w-56 p-3" src={Logo} alt="error" />
           <span className='text-xs p-3 md:text-base'>FSRA LIC 13115</span>
           <div className="flex flex-col-reverse lg:flex-row w-full   gap-8 p-2">

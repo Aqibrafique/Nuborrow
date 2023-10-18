@@ -4,8 +4,8 @@ import Google from '../assets/google.svg'
 function Header() {
   return (
     <>
-    <div className=' w-full drop-shadow-xl'>
-      <div className=' w-full  container p-4 lg:px-16 m-auto flex flex-row justify-between items-center shadow-md'>
+    <div className=' w-full drop-shadow-xl shadow-md'>
+      <div className='container p-4  m-auto flex flex-row justify-between items-center '>
     <div className='py-0'>
         <img className='md:h-12 md:w-auto h-30 w-32 object-contain'  src={Logo} alt='error'/>
         <span className='text-xs md:text-base'>FSRA LIC 13115</span>
