@@ -1,6 +1,6 @@
 import Logo from "../assets/Logo.svg";
-import GooglePlay from "../assets/googleplay.svg";
-import AppStore from "../assets/Appstore.svg";
+// import GooglePlay from "../assets/googleplay.svg";
+// import AppStore from "../assets/Appstore.svg";
 import Footer1 from "../assets/footer_icon1.svg";
 import Footer2 from "../assets/footer_icon2.svg";
 import Footer3 from "../assets/footer_icon3.svg";
