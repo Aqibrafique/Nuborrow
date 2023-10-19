@@ -21,7 +21,7 @@ function TableCall({ name, head1, head2, data1, data2, color }: all) {
         <div className="md:hidden  font-bold my-4 font-sans  text-xl">
           {name}
         </div>
-        <div className="grid grid-cols-2 md:hidden rounded-t-2xl bg-[#715BA8] w-full text-white text-center">
+        <div className="grid grid-cols-2 md:hidden rounded-t-2xl bg-main_theme-600 w-full text-white text-center">
           <span className="p-4 font-sans font-bold text-sm">{head1}</span>
           <span className="p-4 font-sans font-bold text-sm">{head2}</span>
         </div>

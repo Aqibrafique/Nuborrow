@@ -46,7 +46,7 @@ function Cards2({ value, setvalue, data, setData }: all) {
         <div className="w-11/12 mx-3 mt-4 md:mx-7 font-Open_Sans font-normal text-sm">Question 3 of 5</div>
         {/* progress Bar */}
         <div className="w-11/12 mx-3 mt-2 md:mx-7 content-center    dark:bg-neutral-200">
-          <div className="bg-[#715BA8] h-3  w-3/5 "></div>
+          <div className="bg-main_theme-600 h-3  w-3/5 "></div>
         </div>
         {/* value */}
         <div className="text-center text-3xl font-bold my-32">
@@ -56,7 +56,7 @@ function Cards2({ value, setvalue, data, setData }: all) {
         
         <div>
           <input
-            className="w-11/12 m-3 md:m-7 border cursor-pointer rounded-none bg-neutral-100 accent-[#715BA8]"
+            className="w-11/12 m-3 md:m-7 border cursor-pointer rounded-none bg-neutral-100 accent-main_theme-600"
             type="range"
             min="200000.00"
             max="1500000.00"
@@ -67,7 +67,7 @@ function Cards2({ value, setvalue, data, setData }: all) {
         </div>
         <div className="w-11/12  flex items-center justify-center my-9">
           <button
-            className="w-4/12 h-12 rounded-full text-center font-bold text-xl bg-[#715BA8] text-white"
+            className="w-4/12 h-12 rounded-full text-center font-bold text-xl bg-main_theme-600 text-white"
             onClick={handleclick}
           >
             Next

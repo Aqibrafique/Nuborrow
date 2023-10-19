@@ -78,9 +78,9 @@ function HelpSection() {
             {/* flex col 1 */}
             <div className="text-3xl font-bold ">
               <p className="text-5xl font-Raleway">
-                We've <span className="text-[#715BA8] font-black"> SAVED</span>{" "}
+                We've <span className="text-main_theme-600 font-black"> SAVED</span>{" "}
                 Canadians over 8.5{" "}
-                <span className="text-[#715BA8] font-black"> MILLION </span> in
+                <span className="text-main_theme-600 font-black"> MILLION </span> in
                 debt over the last 10 years.
               </p>
             </div>

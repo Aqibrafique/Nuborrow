@@ -191,7 +191,7 @@ function Cards4({ setvalue, value, data, setData }: all) {
         </div>
         {/* progress Bar */}
         <div className="w-11/12 mx-3 mt-2 md:mx-7 content-center    dark:bg-neutral-200">
-          <div className="bg-[#715BA8] h-3  w-5/5"></div>
+          <div className="bg-main_theme-600 h-3  w-5/5"></div>
         </div>
         {/* form */}
         <div>
@@ -308,7 +308,7 @@ function Cards4({ setvalue, value, data, setData }: all) {
         {/* button */}
         <div className="w-11/12  flex items-center justify-center my-9">
           <button
-            className="w-4/12 h-12 rounded-full text-center font-bold text-xl bg-[#715BA8] text-white"
+            className="w-4/12 h-12 rounded-full text-center font-bold text-xl bg-main_theme-600 text-white"
             onClick={handleclick}
           >
             Next

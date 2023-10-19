@@ -82,7 +82,7 @@ function Cards({ value, setvalue, data, setData }: all) {
         </div>
         {/* progress Bar */}
         <div className="w-11/12 mx-3 mt-2 md:mx-7 content-center    dark:bg-neutral-200">
-          <div className="bg-[#715BA8] h-3  w-1/5"></div>
+          <div className="bg-main_theme-600 h-3  w-1/5"></div>
         </div>
         {/* cards */}
         <div className="flex justify-around flex-wrap py-7  gap-12 md:gap-0">

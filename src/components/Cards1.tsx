@@ -91,13 +91,14 @@ const Goback = () =>{
           <div className="w-11/12 mx-3 mt-4 md:mx-7 font-Open_Sans font-normal text-sm ">Question 2 of 5</div>
           {/* progress Bar */}
           <div className="w-11/12 mx-3 mt-2 md:mx-7 content-center    dark:bg-neutral-200">
-            <div className="bg-[#715BA8] h-3  w-2/5"></div>
+            <div className="bg-main_theme-600 h-3  w-2/5"></div>
           </div>
           {/* cards */}
-          <div className="flex justify-around flex-wrap py-7 gap-12  md:gap-0">
+          <div className="flex justify-evenly flex-wrap py-7 gap-12  md:gap-0">
             <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col " onClick={handleclick}>
+            {/* w-60 h-36 */}
               <img
-                className="w-60 h-36 p-4 m-3"
+                className="w-52 h-52 p-4 m-3"
                 src={helpsection21}
                 alt="error"
               />
@@ -107,7 +108,7 @@ const Goback = () =>{
             </div>
             <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick1}>
               <img
-                className="w-60 h-36 p-4 m-3"
+                className="w-52 h-52 p-4 m-3"
                 src={helpsection22}
                 alt="error"
               />
@@ -116,10 +117,10 @@ const Goback = () =>{
               </p>
             </div>
           </div>
-          <div className="flex justify-around flex-wrap py-7 gap-12 md:gap-0">
+          <div className="flex justify-evenly flex-wrap py-7 gap-12 md:gap-0">
             <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick2}>
               <img
-                className="w-60 h-36 p-4 m-3"
+                className="w-52 h-52 p-4 m-3"
                 src={helpsection23}
                 alt="error"
               />
@@ -129,7 +130,7 @@ const Goback = () =>{
             </div>
             <div className="border-neutral-200 border-[4px] text-center hover:shadow-md cursor-pointer  md:border-[8px] flex rounded-3xl justify-center items-center flex-col" onClick={handleclick3}>
               <img
-                className="w-60 h-36 p-4 m-3"
+                className="w-52 h-52 p-4 m-3"
                 src={helpsection24}
                 alt="error"
               />

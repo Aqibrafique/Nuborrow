@@ -11,8 +11,8 @@ function Table() {
         <div className=" w-full container m-auto h-auto flex flex-col md:flex-row items-center md:items-end justify-between xl:gap-40">
         <div className="py-8 md:py-16 md:w-1/2">
           <p className="text-2xl lg:text-5xl font-bold  text-center md:text-left">
-            Clients <span className="text-[#715BA8] font-black"> SAVE</span>{" "}
-            over <span className="text-[#715BA8] font-black"> $15,000 </span> a
+            Clients <span className="text-main_theme-600 font-black"> SAVE</span>{" "}
+            over <span className="text-main_theme-600 font-black"> $15,000 </span> a
             year with our proven strategies.
           </p>
           </div>
@@ -25,7 +25,7 @@ function Table() {
           </div>
         </div>
         <div className="w-full container m-auto">
-          <div className="bg-[#715BA8] w-full text-center hidden grid-cols-3 text-white font-bold text-2xl  rounded-t-lg md:rounded-t-3xl md:grid">
+          <div className="bg-main_theme-600 w-full text-center hidden grid-cols-3 text-white font-bold text-2xl  rounded-t-lg md:rounded-t-3xl md:grid">
             <span></span>
             <span className="p-6">Current Financial Situation</span>
             <span className="p-6">Your new financial situation</span>
@@ -71,7 +71,7 @@ function Table() {
           data2="$2,415.00 a month"
           color="bg-neutral-200"
         />
-        <div className="w-full container m-auto h-56 border my-12 p-6 flex flex-col rounded-2xl bg-[#715BA8] justify-center items-center text-lg md:text-4xl font-bold text-white text-center">
+        <div className="w-full container font-Raleway m-auto h-56 border my-12 p-6 flex flex-col rounded-2xl bg-main_theme-600 justify-center items-center text-lg md:text-4xl font-semibold text-white text-center">
           <span className=" my-3">
             Monthly Savings with Nuborrow: $1,560.00
           </span>
